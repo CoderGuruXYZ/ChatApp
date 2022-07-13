@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(70, 70, 70);
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #5c5c5c;
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(107, 107, 107);
+
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(116, 116, 116);
+}
+
+.app {
+    width: 40vw;
+    height: 90vh;
+
+    background-color: rgb(50, 50, 50);
+
+    border-radius: 20px;
+
+    padding: 20px;
+}
+
+.title {
+    width: 100%;
+    height: 7.5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 24px;
+
+    background-color: rgb(70, 70, 70);
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+
+.window {
+    width: 100%;
+    height: 77.5%;
+
+    color: white;
+
+    font-size: 18px;
+
+    background-color: rgb(65, 65, 65);
+
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+
+    padding: 20px;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.message {
+    width: min-content;
+    height: 50px;
+
+    display: flex;
+
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(75, 75, 75);
+
+    border-radius: 25px;
+
+    margin-right: 10px;
+}
+
+.messageText {
+    min-width: 10px;
+    height: 50px;
+
+    font-size: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(75, 75, 75);
+
+    border-radius: 25px;
+
+    margin-right: 10px;
+
+    font-size: 16px;
+
+    padding: 15px;
+}
+
+.message#user {
+    float: right;
+
+    margin-left: 100%;
+}
+
+.message#user .icon {
+    display: none;
+}
+
+.chatbox {
+    width: 100%;
+    height: 10%;
+
+    color: white;
+
+    font-size: 18px;
+
+    background-color: rgb(75, 75, 75);
+
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.messageBox {
+    background-color: rgb(85, 85, 85);
+
+    color: white;
+
+    height: 100%;
+    width: 91%;
+
+    padding: 10px;
+
+    border-radius: 15px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 18px;
+}
+
+.send {
+    background-color: rgb(0, 35, 151);
+
+    color: white;
+
+    height: 100%;
+    width: 6%;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    border: none;
+
+    outline: none;
+
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
