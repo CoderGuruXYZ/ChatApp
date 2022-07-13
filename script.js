@@ -20,13 +20,13 @@ dataRef.on('value', (snapshot) => {
     const data = snapshot.val();
     all = data;
 
-    if(Object.values(all.messages).length > 1) {
+    if (Object.values(all.messages).length > 1) {
         loadMsgs();
     }
 });
 
 function sendMsg() {
-    if(document.getElementById("userText").value.length > 0) {
+    if (document.getElementById("userText").value.length > 0) {
         var msgs = Object.values(all.messages);
         var ids = Object.values(all.userIds);
         var cols = Object.values(all.colours);
@@ -51,7 +51,7 @@ function sendMsg() {
         cols = Object.values(all.colours);
         nms = Object.values(all.names);
 
-        if(msgs[0] == "") {
+        if (msgs[0] == "") {
             msgs = msgs.slice(1);
             ids = ids.slice(1);
             cols = cols.slice(1);
@@ -69,12 +69,12 @@ function sendMsg() {
     }
 }
 
-document.querySelector(".send").addEventListener("click", function() {
+document.querySelector(".send").addEventListener("click", function () {
     sendMsg();
 });
 
-window.onkeypress = function(event) {
-    if(event.keyCode == "13") {
+window.onkeypress = function (event) {
+    if (event.keyCode == "13") {
         sendMsg();
     }
 };
@@ -87,11 +87,11 @@ function loadMsgs() {
     var cols = Object.values(all.colours);
     var nms = Object.values(all.names);
 
-    for(i = 0; i < msgs.length; i++) {
+    for (i = 0; i < msgs.length; i++) {
         var message = document.createElement("div");
         message.classList.add("message");
 
-        if(ids[i] == userId) {
+        if (ids[i] == userId) {
             message.id = "user";
         }
 
@@ -99,7 +99,7 @@ function loadMsgs() {
         messageText.classList.add("messageText");
         messageText.innerHTML = msgs[i];
 
-        if(ids[i] != userId) {
+        if (ids[i] != userId) {
             var messageDetails = document.createElement("div");
             messageDetails.classList.add("messageDetails");
 

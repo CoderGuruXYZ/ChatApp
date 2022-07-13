@@ -23,8 +23,8 @@ if (localStorage.user == null) {
     localStorage.setItem("userColour", colours[idx]);
 }
 
-if(localStorage.userName == null) {
+if (localStorage.userName == null) {
     var userName = prompt("Enter a Username: ");
-    
+
     localStorage.setItem("userName", userName);
 }

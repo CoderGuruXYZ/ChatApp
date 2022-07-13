@@ -89,7 +89,7 @@ body {
 
 .message {
     display: flex;
-    
+
     width: fit-content;
 
     margin-bottom: 15px;
@@ -112,7 +112,7 @@ body {
 .messageImage {
     height: 35px;
     width: 35px;
-    
+
     border-radius: 25px;
 
     font-size: 23px;
