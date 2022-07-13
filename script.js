@@ -101,6 +101,7 @@ function loadMsgs() {
                 ctxMenu.style.left = (event.pageX - 10) + "px";
                 ctxMenu.style.top = (event.pageY - 10) + "px";
                 ctxMenu.id = msgs[i];
+                document.querySelector("menu").onmouseleave = function() { ctxmenu.style.display = "none"; }
             }, false);
 
             document.querySelector("body").addEventListener("click", function (event) {
