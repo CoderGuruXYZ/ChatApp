@@ -93,6 +93,26 @@ function loadMsgs() {
 
         if (ids[i] == userId) {
             message.id = "user";
+
+            message.addEventListener("contextmenu", function (event) {
+                event.preventDefault();
+                var ctxMenu = document.querySelector(".ctxMenu");
+                ctxMenu.style.display = "block";
+                ctxMenu.style.left = (event.pageX - 10) + "px";
+                ctxMenu.style.top = (event.pageY - 10) + "px";
+                ctxMenu.id = msgs[i];
+            }, false);
+
+            document.querySelector("body").addEventListener("click", function (event) {
+                var ctxMenu = document.querySelector(".ctxMenu");
+                ctxMenu.style.display = "";
+                ctxMenu.style.left = "";
+                ctxMenu.style.top = "";
+            }, false);
+
+            document.querySelector(".ctxMenu").addEventListener("click", function (event) {
+                alert("Beta Feature - WIP");
+            }, false);
         }
 
         var messageText = document.createElement("div");
