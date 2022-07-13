@@ -1,10 +1,11 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyDN3YX53Q63S3vcqH864ipRQ0zB3GeNdqg",
-    authDomain: "chat-app-test-5bb2e.firebaseapp.com",
-    projectId: "chat-app-test-5bb2e",
-    storageBucket: "chat-app-test-5bb2e.appspot.com",
-    messagingSenderId: "742878400472",
-    appId: "1:742878400472:web:116aaa65115b7278ef2cad"
+    apiKey: "AIzaSyDYDCWXDLXH9_FArKRUT5er1TkVQVUEO6Q",
+    authDomain: "chatapp-37829.firebaseapp.com",
+    databaseURL: "https://chatapp-37829-default-rtdb.firebaseio.com",
+    projectId: "chatapp-37829",
+    storageBucket: "chatapp-37829.appspot.com",
+    messagingSenderId: "377322785306",
+    appId: "1:377322785306:web:4ee30a3f6a499376f79fa3"
 };
 
 firebase.initializeApp(firebaseConfig);

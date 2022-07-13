@@ -87,6 +87,14 @@ body {
     overflow-y: scroll;
 }
 
+.message {
+    display: flex;
+    
+    width: fit-content;
+
+    margin-bottom: 15px;
+}
+
 .messageDetails {
     display: flex;
 
@@ -98,7 +106,7 @@ body {
 
     border-radius: 20px;
 
-    background-color: rgb(42, 42, 42);
+    background-color: rgb(55, 55, 55);
 }
 
 .messageImage {
@@ -126,7 +134,7 @@ body {
 .messageText {
     width: fit-content;
 
-    background-color: rgb(47.5, 47.5, 47.5);
+    background-color: rgb(50, 50, 50);
 
     padding: 15px;
 
