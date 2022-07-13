@@ -14,46 +14,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
 </head>
 
 <body>
+    <script src='init.js'></script>
+
     <div class="app">
         <div class="title">Chat App</div>
         <div class="window">
             <div class="message">
-                <div class="icon">
-                    <i class="fa-solid fa-circle-user"></i>
+                <div class="messageDetails">
+                    <div class="messageName">Name</div>
+                    <div class="messageImage"><i class="fa-solid fa-circle-user"></i>
+                    </div>
                 </div>
-                <div class="messageText">asdda</div>
-            </div>
-            <div class="message">
-                <div class="icon">
-                    <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <div class="messageText">asdda</div>
-            </div>
-            <div class="message" id = "user">
-                <div class="icon">
-                    <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <div class="messageText">asdda</div>
-            </div>
-            <div class="message">
-                <div class="icon">
-                    <i class="fa-solid fa-circle-user"></i>
-                </div>
-                <div class="messageText">asdda</div>
+                <div class="messageText">Hi</div>
             </div>
         </div>
         <div class="chatbox">
-            <input type="text" class="messageBox" placeholder = "Enter Message Here...">
+            <input type="text" class="messageBox" id = "userText" placeholder = "Enter Message Here...">
             <button class="send">
                 <i class="fa-solid fa-paper-plane"></i>
             </button>
         </div>
     </div>
 
-    <script src='script.js' async defer></script>
+    <script src='script.js'></script>
 </body>
 
 </html>
